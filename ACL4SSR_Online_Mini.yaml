@@ -3,9 +3,9 @@ proxy-groups:
     type: select
     proxies:
       - ♻️ 自动选择
+      - 🚀 手动切换
       - 🇭🇰 香港节点
       - 🇺🇲 美国节点
-      - 🚀 手动切换
       - DIRECT
   - name: ♻️ 自动选择
     type: url-test
@@ -29,12 +29,12 @@ proxy-groups:
   - name: 🐟 漏网之鱼
     type: select
     proxies:
-      - 🚀 节点选择
       - ♻️ 自动选择
+      - 🚀 节点选择
+      - 🚀 手动切换
       - DIRECT
       - 🇭🇰 香港节点
       - 🇺🇲 美国节点
-      - 🚀 手动切换
   - name: 🇭🇰 香港节点
     include-all: true
     filter: (?i)港|HK|hk|Hong Kong|HongKong|hongkong
