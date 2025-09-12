@@ -85,7 +85,7 @@ rule-providers:
     format: text
     type: http
   SteamCN:
-    url: ./ruleset/SteamCN.list
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/SteamCN.list
     path: ./ruleset/SteamCN.list
     behavior: classical
     interval: 86400
@@ -99,8 +99,8 @@ rule-providers:
     format: text
     type: http
   YouTube:
-    url: ./ruleset/YouTube.list
-    path: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/YouTube.list
+    path: ./Ruleset/YouTube.list
     behavior: classical
     interval: 86400
     format: text
