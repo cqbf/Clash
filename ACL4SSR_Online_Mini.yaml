@@ -51,84 +51,84 @@ proxy-groups:
 rule-providers:
   LocalAreaNetwork:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/LocalAreaNetwork.list
-    path: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ruleset/LocalAreaNetwork.list
+    path: ./ruleset/LocalAreaNetwork.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   UnBan:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/UnBan.list
-    path: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ruleset/UnBan.list
+    path: ./ruleset/UnBan.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   BanAD:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/BanAD.list
-    path: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ruleset/BanAD.list
+    path: ./ruleset/BanAD.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   BanProgramAD:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/BanProgramAD.list
-    path: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ruleset/BanProgramAD.list
+    path: ./ruleset/BanProgramAD.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   GoogleCN:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/GoogleCN.list
-    path: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ruleset/GoogleCN.list
+    path: ./ruleset/GoogleCN.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   SteamCN:
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/SteamCN.list
-    path: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ruleset/SteamCN.list
+    url: ./ruleset/SteamCN.list
+    path: ./ruleset/SteamCN.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   Telegram:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Telegram.list
-    path: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ruleset/Telegram.list
+    path: ./ruleset/Telegram.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   YouTube:
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/YouTube.list
-    path: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ruleset/YouTube.list
+    url: ./ruleset/YouTube.list
+    path: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   ProxyMedia:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ProxyMedia.list
-    path: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ruleset/ProxyMedia.list
+    path: ./ruleset/ProxyMedia.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   ProxyGFWlist:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ProxyLite.list
-    path: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ruleset/ProxyGFWlist.list
+    path: ./ruleset/ProxyGFWlist.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   ChinaDomain:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaDomain.list
-    path: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ruleset/ChinaDomain.list
+    path: ./ruleset/ChinaDomain.list
     behavior: domain
     interval: 86400
     format: text
     type: http
   ChinaCompanyIp:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaCompanyIp.list
-    path: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ruleset/ChinaCompanyIp.list
+    path: ./ruleset/ChinaCompanyIp.list
     behavior: ipcidr
     interval: 86400
     format: text
