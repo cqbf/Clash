@@ -105,9 +105,9 @@ rule-providers:
     interval: 86400
     format: text
     type: http
-  ProxyGFWlist:
+  ProxyLite:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ProxyLite.list
-    path: ./ruleset/ProxyGFWlist.list
+    path: ./ruleset/ProxyLite.list
     behavior: classical
     interval: 86400
     format: text
