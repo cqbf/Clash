@@ -98,13 +98,6 @@ rule-providers:
     interval: 86400
     format: text
     type: http
-  YouTube:
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/YouTube.list
-    path: ./Ruleset/YouTube.list
-    behavior: classical
-    interval: 86400
-    format: text
-    type: http
   ProxyMedia:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ProxyMedia.list
     path: ./ruleset/ProxyMedia.list
@@ -142,7 +135,6 @@ rules:
   - "RULE-SET,GoogleCN,🎯 全球直连"
   - "RULE-SET,SteamCN,🎯 全球直连"
   - "RULE-SET,Telegram,🚀 节点选择"
-  - "RULE-SET,Youtube,🚀 节点选择"
   - "RULE-SET,ProxyMedia,🚀 节点选择"
   - "RULE-SET,ProxyLite,🚀 节点选择"
   - "RULE-SET,ChinaDomain,🎯 全球直连"
