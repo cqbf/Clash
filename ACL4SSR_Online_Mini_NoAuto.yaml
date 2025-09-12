@@ -2,9 +2,9 @@ proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
+      - 🚀 手动切换
       - 🇭🇰 香港节点
       - 🇺🇲 美国节点
-      - 🚀 手动切换
       - DIRECT
   - name: 🚀 手动切换
     include-all: true
@@ -23,10 +23,10 @@ proxy-groups:
     type: select
     proxies:
       - 🚀 节点选择
-      - DIRECT
+      - 🚀 手动切换
       - 🇭🇰 香港节点
       - 🇺🇲 美国节点
-      - 🚀 手动切换
+      - DIRECT
   - name: 🇭🇰 香港节点
     include-all: true
     filter: (?i)港|HK|hk|Hong Kong|HongKong|hongkong
@@ -77,54 +77,47 @@ rule-providers:
     format: text
     type: http
   SteamCN:
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/SteamCN.list
+    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/SteamCN.list
     path: ./ruleset/SteamCN.list
     behavior: classical
     interval: 86400
     format: text
-    type: http
+    输入: http
   Telegram:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Telegram.list
     path: ./ruleset/Telegram.list
     behavior: classical
     interval: 86400
     format: text
-    type: http
-  YouTube:
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/YouTube.list
-    path: ./ruleset/YouTube.list
-    behavior: classical
-    interval: 86400
-    format: text
-    type: http
+    输入: http
   ProxyMedia:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ProxyMedia.list
     path: ./ruleset/ProxyMedia.list
     behavior: classical
     interval: 86400
     format: text
-    type: http
-  ProxyGFWlist:
+    输入: http
+  ProxyLite:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ProxyLite.list
-    path: ./ruleset/ProxyGFWlist.list
+    path: ./ruleset/ProxyLite.list
     behavior: classical
     interval: 86400
     format: text
-    type: http
+    输入: http
   ChinaDomain:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaDomain.list
     path: ./ruleset/ChinaDomain.list
     behavior: domain
     interval: 86400
     format: text
-    type: http
+    输入: http
   ChinaCompanyIp:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaCompanyIp.list
     path: ./ruleset/ChinaCompanyIp.list
     behavior: ipcidr
     interval: 86400
     format: text
-    type: http
+    输入: http
     
 rules:
   - "RULE-SET,LocalAreaNetwork,🎯 全球直连"
@@ -134,7 +127,6 @@ rules:
   - "RULE-SET,GoogleCN,🎯 全球直连"
   - "RULE-SET,SteamCN,🎯 全球直连"
   - "RULE-SET,Telegram,🚀 节点选择"
-  - "RULE-SET,Youtube,🚀 节点选择"
   - "RULE-SET,ProxyMedia,🚀 节点选择"
   - "RULE-SET,ProxyLite,🚀 节点选择"
   - "RULE-SET,ChinaDomain,🎯 全球直连"
