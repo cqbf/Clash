@@ -1,41 +1,41 @@
 proxy-groups:
-  - name: 🚀 节点选择
+  - name: 节点选择
     type: select
     proxies:
-      - 🇭🇰 香港节点
-      - 🇺🇲 美国节点
-      - 🚀 手动切换
+      - 香港节点
+      - 美国节点
+      - 手动切换
       - DIRECT
-  - name: 🚀 手动切换
+  - name: 手动切换
     include-all: true
     type: select
-  - name: 🇭🇰 香港节点
+  - name: 香港节点
     include-all: true
     filter: (?i)港|HK|hk|Hong Kong|HongKong|hongkong
     type: url-test
     interval: 300
     tolerance: 50
-  - name: 🇺🇲 美国节点
+  - name: 美国节点
     include-all: true
     filter: (?i)美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States
     type: url-test
     interval: 300
     tolerance: 50
-  - name: 🎯 全球直连
+  - name: 全球直连
     type: select
     proxies:
-      - 🚀 节点选择
+      - 节点选择
       - DIRECT
-  - name: 🛑 广告拦截
+  - name: 广告拦截
     type: select
     proxies:
       - REJECT
       - DIRECT
-  - name: 🐟 漏网之鱼
+  - name: 漏网之鱼
     type: select
     proxies:
-      - 🚀 手动切换
-      - 🚀 节点选择
+      - 手动切换
+      - 节点选择
       - DIRECT
 
 rule-providers:
@@ -108,26 +108,26 @@ rule-providers:
     behavior: domain
     interval: 86400
     format: text
-    输入: http
+    type: http
   ChinaCompanyIp:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaCompanyIp.list
     path: ./ruleset/ChinaCompanyIp.list
     behavior: ipcidr
     interval: 86400
     format: text
-    输入: http
+    type: http
     
 rules:
-  - "RULE-SET,LocalAreaNetwork,🎯 全球直连"
-  - "RULE-SET,UnBan,🎯 全球直连"
-  - "RULE-SET,BanAD,🛑 广告拦截"
-  - "RULE-SET,BanProgramAD,🛑 广告拦截"  
-  - "RULE-SET,GoogleCN,🎯 全球直连"
-  - "RULE-SET,SteamCN,🎯 全球直连"
-  - "RULE-SET,Telegram,🚀 节点选择"
-  - "RULE-SET,ProxyMedia,🚀 节点选择"
-  - "RULE-SET,ProxyLite,🚀 节点选择"
-  - "RULE-SET,ChinaDomain,🎯 全球直连"
-  - "RULE-SET,ChinaCompanyIp,🎯 全球直连"
-  - "GEOIP,CN,🎯 全球直连"
-  - "MATCH,🐟 漏网之鱼"
+  - "RULE-SET,LocalAreaNetwork,全球直连"
+  - "RULE-SET,UnBan,全球直连"
+  - "RULE-SET,BanAD,广告拦截"
+  - "RULE-SET,BanProgramAD,广告拦截"  
+  - "RULE-SET,GoogleCN,全球直连"
+  - "RULE-SET,SteamCN,全球直连"
+  - "RULE-SET,Telegram,节点选择"
+  - "RULE-SET,ProxyMedia,节点选择"
+  - "RULE-SET,ProxyLite,节点选择"
+  - "RULE-SET,ChinaDomain,全球直连"
+  - "RULE-SET,ChinaCompanyIp,全球直连"
+  - "GEOIP,CN,全球直连"
+  - "MATCH,漏网之鱼"
