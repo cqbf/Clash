@@ -2,31 +2,13 @@ proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
-      - 🚀 手动切换
       - 🇭🇰 香港节点
       - 🇺🇲 美国节点
+      - 🚀 手动切换
       - DIRECT
   - name: 🚀 手动切换
     include-all: true
     type: select
-  - name: 🎯 全球直连
-    type: select
-    proxies:
-      - DIRECT
-      - 🚀 节点选择
-  - name: 🛑 广告拦截
-    type: select
-    proxies:
-      - REJECT
-      - DIRECT
-  - name: 🐟 漏网之鱼
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - 🚀 手动切换
-      - 🇭🇰 香港节点
-      - 🇺🇲 美国节点
-      - DIRECT
   - name: 🇭🇰 香港节点
     include-all: true
     filter: (?i)港|HK|hk|Hong Kong|HongKong|hongkong
@@ -39,7 +21,23 @@ proxy-groups:
     type: url-test
     interval: 300
     tolerance: 50
-    
+  - name: 🎯 全球直连
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - DIRECT
+  - name: 🛑 广告拦截
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - 🚀 手动切换
+      - 🚀 节点选择
+      - DIRECT
+
 rule-providers:
   LocalAreaNetwork:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/LocalAreaNetwork.list
